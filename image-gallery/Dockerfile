@@ -1,0 +1,9 @@
+FROM postgres:13
+
+ENV PG_HOST=image-gallery-docker.c3dkgwsygvad.us-east-1.rds.amazonaws.com
+ENV PG_PORT=5432
+ENV IG_DATABASE=image-gallery-docker
+ENV IG_USER=image_gallery
+ENV IG_PASSWD_FILE=/python-image-gallery/gallery/ui/temp_pw_file.txt
+ENV S3_IMAGE_BUCKET=python-image-gallery-bucket
+ENV FLASK_SESSION_SECRET=safsf987s9f7w9#$*bygh$@
